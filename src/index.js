@@ -1,5 +1,5 @@
 /** GENERAL FEEDBACK:
- *
+ *  Great job getting all test cases to pass!
  */
 // const form = document.querySelector('#new-user-form');
 // form.addEventListener('submit', (e) => {e.preventDefault()})
@@ -8,6 +8,7 @@
 const handleSubmit = (e) => {
   e.preventDefault()
   const form = document.querySelector('#new-user-form');
+  /** FEEDBACK: You can turn this new FormData into an object by using Object.entries and then access properties through dot notation! */
   const formData = new FormData(form);
   document.querySelector('#results-username').textContent = formData.get("username");
   document.querySelector('#results-coding-level').textContent = formData.get("codingLevel");
